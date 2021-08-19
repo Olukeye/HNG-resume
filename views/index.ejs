@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/header.ejs')%>
+<body class="bg-light">
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-lg-4 bg-dark text-white text-center py-4">
+        <div class="header-left">
+          <img src="/images/bopdaddy.jpg" alt="" class="img-thumbnail rounded-circle mb-2">
+          <h1 class="display-5">Chijioke udogu</h1>
+          <h4 class="lead  text-uppercase text-white-50 mb-4">Backend Developer</h4>
+        </div>
+
+        <div>
+          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">Contact</h5>
+
+          <ul class="list-unstyled text-white-50 ml-5 py-2 text-left">
+            <li class="list-item">
+              <i class="fa fa-mobile mx-4" aria-hidden="true"></i>
+              +234 7067 444 368
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope mx-4" aria-hidden="true"></i>
+              Gregudogu@gmail.com
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-linkedin-square mx-4" aria-hidden="true"></i>
+              <a class="text-white" href="https://Linkedin/in/chijioke-udogu-baba0bb8">Chijioke Udogu</a>
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-github mx-4" aria-hidden="true"></i>
+              <a class="text-white" href="https://www.github.com/bootspace">Bootspace Media</a>
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-map-marker mx-4" aria-hidden="true"></i>
+              Port Harcourt, Rivers State
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">Skills</h5>
+          <ul class="list-unstyled text-white-50 ml-5 py-2 text-left text-capitalize">
+            <li class="list-item">
+              <i class="fa fa-html5 mx-4" aria-hidden="true"></i>
+              Html</li>
+            <li class="list-item">
+              <i class="fa fa-css3 mx-4" aria-hidden="true"></i>
+              Css</li>
+            <li class="list-item">
+              <i class="fa fa-desktop mx-4" aria-hidden="true"></i>  
+              JavaScript</li>
+            <li class="list-item">
+              <i class="fa fa-desktop mx-4" aria-hidden="true"></i>
+              Node.js</li>
+            <li class="list-item">
+              <i class="fa fa-desktop mx-4" aria-hidden="true"></i>
+              Express</li>
+            <li class="list-item">
+              <i class="fa fa-desktop mx-4" aria-hidden="true"></i>
+              MongoDB</li>
+            <li class="list-item">
+              <i class="fa fa-desktop mx-4" aria-hidden="true"></i>
+              MySQL</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">Education</h5>
+          <ul class="list-unstyled text-white-50 ml-5 py-2 text-left text-capitalize"></ul>
+            <li class="list-item">B.Sc Computer Science, Nnamdi Azikiwe University</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-lg-8 bg-light text-dark py-4 px-5">
+        <div class="header-right">
+          <h4 class="text-uppercase">Profile</h4>
+          <hr>
+          <p class="text-dark">I am a focused, hardworking and determined individual with a Bachelors degree in Computer Science from Nnamdi Azikiwe University Awka. <br>
+            I am very innovative and able to work with my initiative, always willing to learn new and better methods to solve problems, quick to adapt to new and fast changing technologies and able to thrive and add value to team based ventures.</p>
+        </div>
+
+        <div>
+          <h4 class="text-uppercase">Working Experience</h4>
+          <hr>
+          <p class="text-dark">I am currently undergoing the HNG Internship</p>
+          <img class="img-fluid mb-5" src="/images/brand-logo.png" alt="">
+        </div>
+
+        <div>
+          <h4 class="text-uppercase">Projects</h4>
+          <hr>
+
+          <ul class="list">
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">E-Commerce Backend API</h5>
+              <p class="text-black-50">
+                I designed a simple E-commerce backend REST api using Node.js, express.js and MongoDB. 
+              </p>
+            </li>
+
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">URL Shortener</h5>
+              <p class="text-black-50">
+                I built a URL shortener app using Node.js, express.js and MongoDB. 
+              </p>
+            </li>
+
+            <li class="list-item">
+              <h5 class="display-6 text-uppercase">Bookstore API</h5>
+              <p class="text-black-50">
+                I designed a simple Bookstore REST api using Node.js, express.js and MongoDB. 
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-uppercase">Contact Me</h4>
+          <hr>
+          <form method="POST" action="/contactinfo" id="form">
+            <div class="mb-3 pt-2">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your name">
+            </div>
+        
+        
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone numer">
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" name="message" placeholder="Enter your message" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./partials/footer.ejs')%>
+</body>
+</html>
