@@ -16,18 +16,13 @@ router.post('/contactinfo', async (req, res) => {
   const { name, email, phone, message } = req.body;
   console.log(req.body);
   try {
-    let contact = new Contact({ name, email, phone, message });
-
-    await contact.save();
-
-    let mailOptions = {
+      let mailOptions = {
       from:'bootspacetech@gmail.com',
-      to: contact.email,
+      to: email,
       subject: 'Thanks for connecting with Chijioke',
-      text: `Thank you ${contact.name} for connecting with Chijioke. He will get back to you shortly`
+      text: `Thank you ${name} for connecting with Chijioke. He will get back to you shortly`
     }
-
-    transporter.sendMail(mailOptions, (err, info) => {
+       transporter.sendMail(mailOptions, (err, info) => {
       if(err) {
          console.log(err);
       }
@@ -35,7 +30,11 @@ router.post('/contactinfo', async (req, res) => {
         console.log('Email sent: ' + info.response);
       }
     })
-    res.render('success.ejs', { message: `${contact.name} your mail has been sent!`})
+
+    let contact = new Contact({ name, email, phone, message });
+    await contact.save();
+
+    res.render('success.ejs', { message: `${ contact.name } your mail has been sent!`})
     
    
 
