@@ -1,1 +1,1 @@
-# HNG-TASK-2
+# HNG-2-TASK
